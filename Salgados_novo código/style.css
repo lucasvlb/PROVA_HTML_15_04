@@ -1,0 +1,93 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif;           /* Fonte principal */
+    background-color: #f9f9f9;                /* Cor de fundo clara */
+    padding: 30px;                            /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;                      /* Centraliza horizontalmente */
+}
+
+/* Estilo do título principal */
+h1#id_01 {
+    margin-bottom: 25px;                      /* Espaço abaixo do título */
+    color: #333;                              /* Cor escura */
+}
+
+/* Caixa branca que envolve o formulário e resultado */
+.inputs {
+    background-color: white;                  /* Fundo branco */
+    padding: 20px 30px;
+    border-radius: 8px;                       /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);    /* Sombra suave */
+    width: 320px;                             /* Largura fixa */
+}
+
+/* Formulário com alinhamento vertical */
+form#dados {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo dos rótulos */
+form#dados label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo dos campos de entrada */
+form#dados input[type="text"],
+form#dados input[type="number"] {
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo do botão "Total" */
+form#dados button {
+    margin-top: 25px;
+    padding: 10px 0;
+    background-color: #007bff;               /* Azul */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo ao passar o mouse no botão */
+form#dados button:hover {
+    background-color: #0056b3;
+}
+
+/* Área de exibição do resultado do cálculo */
+.calculo_total {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #222;
+    white-space: pre-line;                   /* Quebra de linha com \n */
+    width: 100%;                             /* Ocupa toda a largura da .inputs */
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Título do resultado */
+.calculo_total h2:first-child {
+    margin-bottom: 15px;
+    color: #444;
+    font-weight: 600;
+}
